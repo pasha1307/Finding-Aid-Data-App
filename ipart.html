@@ -1,0 +1,29 @@
+<div class="row">
+	<div class="col col-md-3">
+		<form class="form-group animated bounceInDown">
+							<label for="">Search
+							<input type="text" placeholder="start typing" class="form-control" ng-model="query" autofocus>
+							</label>
+							<label for="">Order by
+								<select name="start" class="form-control" ng-model="listOrder">
+									<option value="start">start</option>
+									<option value="name">name</option>
+								</select></label>
+		</form>
+	<article>
+		<h3>Pitirim Sorokin Collection In Canada</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, tenetur est distinctio maxime obcaecati. Eos a accusamus laborum unde, minus fugit, officia, rerum provident fuga nobis recusandae aut possimus sed.</p>
+	</article>
+	</div>
+		
+	<div class="col col-md-9" id="list">
+				<ul ng-repeat="item in list | filter: query | orderBy: listOrder ">
+					<li class="animated zoomIn" ng-show = "item.start.length > 0" >
+						<a href="#/item/{{list.indexOf(item)}}" title="Click for Details" data-toggle="tooltip" data-position="left" tooltip><h4>{{item.name}}</h4></a>
+						<p><em>Started in: {{item.start}}</em></p>
+					</li>
+				</ul>
+			
+		</div>
+</div>
+<!--title="Click for Details" data-toggle="tooltip" data-position="left" tooltip-->

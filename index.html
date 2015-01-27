@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html lang=""  ng-app="myApp">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<title>PAS Collection in Canada [Angular+Bootstrap+Animate.css]</title>
+	<link rel="shortcut icon" href="">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="animate.css">
+	<link href="http://thomasf.github.io/solarized-css/solarized-light.min.css" rel="stylesheet"></link>
+	<script src="angular/angular.min.js"></script>
+	<script src="angular/animate.js"></script>
+	<script src="js/jquery.columnizer.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/route.js"></script>
+	<script src="js/ctrl.js"></script>
+	<script src="js/script.js"></script>
+	<script src="/bower_components/tether/tether.js"></script>
+<script src="/bower_components/angular-tooltip/dist/angular-tooltip.js"></script>
+	<style>	body {padding-top: 40px; align-content: center;padding-bottom: 70px;} ul li {list-style: none; }</style>
+</head>
+
+<body>
+<nav class="navbar navbar-fixed-top" role="navigation">
+		
+		<div class="container">
+		<div class="text-right">
+			<a href="#"><img class="text-right"src="img/sflogo.png" alt="logo" id="logo"></a>
+		</div>
+			<div>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				
+			</div>
+		</div>
+</nav>
+	<div class="container">
+		<div>
+			<h1>Finding Aid</h1>
+		</div>
+		<div ng-view></div>
+		</div> <!-- container -->
+		
+		
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+	<div class="container-fluid" id="footer">
+      <a href="http://pavelkrotov.com"><h5><small class="glyphicon glyphicon-user">&copy;ppk 2015</small></h5>
+ </div>
+</nav>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
